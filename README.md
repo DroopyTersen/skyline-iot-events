@@ -12,7 +12,7 @@ If you are using node or a javscript build process (browserify or webpack), just
 >> npm install --save skyline-iot-events
 ```
 
-Otherwise, it also just works on any static HTML page.  Just add a script reference to one of the builds in the `/dist` folder.
+Otherwise, it also works on any static HTML page.  Just add a script reference to one of the builds in the `/dist` folder.
 
 ```html
 <script src='skyline-iot-events/dist/iotEvents.min.js'></script> 
@@ -24,7 +24,7 @@ Three methods are exposed to handle pubsub
 - `iotEvents.trigger(key, payload)` - Fire off an event of type 'key'. The payload is just an object, but please be a good citizen and at least add a `source` property.
 - `iotEvents.subscribe(key, callback)` - Listen for a device to call `.trigger()` on the specified  `key`, your callback will be invoked with the triggering `payload` as the first argument.
 - `iotEvents.unsubscribe(key, callback)` - Stop listening to IOT events of the specified key.
-- `iotEvents.subscribe('log', callback)` - A quick little backdoor to listen to every event. *Note: the first argument to your callback is an `event` not just the `payload`.*
+- `iotEvents.subscribe('log', callback)` - A quick little backdoor to listen to every event. *Note: the first argument to your callback is an event object, `{ key, payload }`, not just the `payload`.*
 
 
 Example Usage
