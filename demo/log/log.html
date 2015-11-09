@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src='../../dist/iotEvents.js'></script>
+<script>
+var iotEvents =window.iotEvents;
+
+var logEvent = function(e) {
+	console.log(e);
+}
+iotEvents.subscribe("log", logEvent);
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.iotEvents = require("../iotEvents");

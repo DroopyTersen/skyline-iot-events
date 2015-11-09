@@ -1,0 +1,54 @@
+body {
+	background: #222;
+	font-family: helvetica
+}
+.container {
+	width: 100%;
+	text-align: center;
+	background: #222;
+
+}
+.pad {
+  position: relative;
+  background: #777;
+  width : 250px;
+  height: 250px;
+  border: 2px solid #999;
+  border-radius: 10px;
+  margin:30px auto;
+}
+.stopzone {
+  position: absolute;
+  top   : 95px;
+  left  : 98px;
+  width : 60px;
+  height: 60px;
+  background: none;
+  border: 1px solid #0f0;
+  border-radius: 100%;
+}
+.output, .log {
+	color: #fff
+}
+.ball {
+  position: absolute;
+  top   : 110px;
+  left  : 110px;
+  width : 30px;
+  height: 30px;
+  background: #111;
+  border-radius: 100%;
+}
+button {
+    background: #060;
+    border: none;
+    padding: 11px 20px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 2em;
+        margin: 10px;
+    border: 1px solid #888;
+}
+button.stop {
+	background: #600;
+}
